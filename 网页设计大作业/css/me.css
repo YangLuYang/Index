@@ -1,0 +1,380 @@
+@font-face{
+    font-family:EuropeExtWebRegular;
+    font-style:normal;
+    font-weight:400;
+    src:url(../fonts/ERP53__W.eot),
+    url(../fonts/ERP53__W.ttf) format("truetype");
+}
+.content {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .content {
+        padding-left: 7.8125%;
+        padding-right: 7.8125%;
+    }
+}
+@media (min-width: 1024px) {
+    .content {
+        padding-left: 7.421875%;
+        padding-right: 7.421875%;
+    }
+}
+@media (min-width: 1360px) {
+    .content {
+        padding-left: calc(50% - 560px);
+        padding-right: calc(50% - 560px);
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+li {
+    list-style: none;
+}
+.clearfix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.list {
+    display: inline-block;
+}
+.list li {
+    float: left;
+}
+.list li a {
+    display: block;
+}
+body {
+    font-family: EuropeExtWebRegular,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    /*text-transform: uppercase;*/
+    color: #46505a;
+    position: relative;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+#bg {
+    position: relative;
+}
+#header {
+    height: 72px;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+#header .wrap {
+    position: relative;
+    z-index: 10;
+}
+#header .wrap #logo {
+    display: inline-block;
+}
+#header .wrap #logo>a {
+    display: inline-block;
+}
+#header .wrap #logo img{
+    display: inline-block;
+    width: 143px;
+    height: 63px;
+    margin: 4px 0 2px 31px;
+    background-size: cover;
+}
+#header .wrap .list {
+    margin-left: 79px;
+}
+#header .wrap .list li a {
+    padding-top: 1px;
+    padding-right: 32px;
+}
+#header .wrap .list li a span:hover {
+    color: #cf4545;
+    transition: all 0.2s ease-in 0s;
+}
+#header .wrap .list li a span {
+    color: #46505a;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    font-size: 14px;
+}
+#header .wrap .user {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+#header .wrap .user li a {
+    padding-right: 56px;
+}
+/*导航栏样式设计完成*/
+#post {
+    width: 100%;
+    /*height: 1080px;*/
+    position: relative;
+    z-index: 1;
+    margin-top: -73px;
+    background: url(../images/me-wide.img.jpg) no-repeat top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 56.25vw;
+    justify-content: center;
+    color: #fff;
+}
+#post .wrap h1 {
+    margin-top: -8px;
+    margin-bottom: -9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    flex-basis: 66.6666666667%;
+    max-width: 66.6666666667%;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: normal;
+}
+#post .wrap p{
+    font-family: "Microsoft YaHei UI", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+#post .wrap .watch-btn {
+    position: relative;
+    font-family: "Microsoft YaHei UI", sans-serif;
+    margin-top: 40px;
+    width: 244px;
+    height: 44px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #ce0808;
+    text-align: center;
+    line-height: 44px;
+    margin-left: 16px;
+}
+#post .wrap .watch-btn a {
+    display: block;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: left;
+    padding-left: 16px;
+}
+#post .wrap .watch-btn a:hover {
+    background-color: #ee0808;
+    transition: all 0.1s ease-in-out;
+}
+
+#post .wrap .watch-btn span {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/play_button.png) no-repeat;
+    background-size: cover;
+}
+
+#post .platform {
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+}
+#post .platform li{
+    margin-right: 15px;
+}
+#post .platform .tips span{
+    /*color: #fff;*/
+    line-height: 24px;
+    color: #ce0808;
+}
+#post .platform .pc {
+    width: 24px;
+    height: 24px;
+    background: url(../images/win-Logo.png) no-repeat;
+    background-size: 24px 24px;
+}
+#post .platform .xb {
+    width: 118px;
+    height: 24px;
+    background: url(../images/xbox-one-logo.png) no-repeat;
+    background-size: 118px 24px;
+}
+#post .platform .ps {
+    padding-top: 4px;
+    width: 64px;
+    height: 16px;
+    background: url(../images/ps4-Logo.png) no-repeat;
+    background-origin: content-box;
+    background-size: 64px 16px;
+}
+/*Post Ended*/
+#main {
+    position: relative;
+    margin: 128px 0;
+}
+#main .col-1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 128px;
+}
+#main .col-1 .describe {
+    margin: 56px 0 0;
+    width: 738px;
+}
+#main  .describe h1 {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+#main .describe p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 34px;
+    font-family: "Microsoft YaHei UI", sans-serif;
+}
+#main .describe .learn-btn {
+    cursor: pointer;
+    font-family: "Microsoft YaHei UI", sans-serif;
+    width: 150px;
+    height: 44px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #ce0808;
+    text-align: center;
+    line-height: 44px;
+}
+#main .col-1 .describe .learn-btn:hover,#main .col-2 .describe .learn-btn:hover{
+    background-color: #ee0808;
+    transition: all 0.1s ease-in-out;
+}
+#main .col-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+#main .col-2 .item {
+    box-sizing: content-box;
+    width: 544px;
+    height: 500px;
+    padding: 0 16px;
+    position: relative;
+    flex-grow: 1;
+    /*flex-basis: 33.3333333333%;*/
+}
+#main .col-2 .item img {
+    width: 544px;
+    height: 306px;
+    margin-bottom: 32px;
+}
+/*#main .col-2 .item h1 {*/
+    /*font-size: 26px;*/
+    /*line-height: 34px;*/
+    /*font-weight: 200;*/
+    /*margin-bottom: 34px;*/
+/*}*/
+#footer {
+    /*height: 383px;*/
+    width: 100%;
+    background-color: #eaeaea;
+    position: relative;
+    color: #46505a;
+}
+#footer .footer-top,#footer .footer-bottom{
+    padding-top: 40px;
+}
+#footer .wrap>.container {
+    border-bottom: 1px solid #303030;
+}
+#footer .right-container,#footer .left-container {
+    margin-bottom: 15px;
+}
+#footer .right-container div{
+    text-align: right;
+}
+#footer .right-container .list li{
+    margin-right: 40px;
+}
+#footer .right-container .list li:last-child{
+    margin: 0;
+}
+#footer .right-container .list a {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+#footer .right-container .list a img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /*完全居中*/
+}
+#footer .right-container .list a img:hover {
+    transition: all 0.2s ease-in 0s;
+    transform: scale(1.5,1.5);
+    /*width: 32px;*/
+    /*height: 32px;*/
+}
+#footer .left-container div {
+    text-align: left;
+}
+#footer .left-container .list li {
+    margin-right: 48px;
+}
+#footer .left-container .list li a {
+    color: #46505a;
+    font-size: 15px;
+    line-height: 28px;
+}
+#footer .footer-top .left-container .list li a:hover {
+    transition: all 0.1s ease;
+    border-bottom: 2px solid #000;
+}
+#footer .main-title {
+    font-size: 18px;
+    line-height: 49px;
+}
+#footer .vice-title {
+    font-size: 15px;
+    line-height: 32px;
+}
+
+#footer .footer-bottom .list li:first-child {
+    /*margin-top: -10px;*/
+}
+#footer .footer-bottom .list li:nth-child(even) {
+    margin-top: -20px;
+}
+#footer .footer-bottom .list li:last-child {
+    margin-top: -30px;
+}
+

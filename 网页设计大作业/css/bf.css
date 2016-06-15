@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+li {
+    list-style: none;
+}
+.clearfix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.list {
+    display: inline-block;
+}
+.list li {
+    float: left;
+}
+.list li a {
+    display: block;
+}
+body {
+    font-family: "Microsoft YaHei UI",sans-serif;
+    color: #fff;
+    background: url(../images/bg-xlarge.jpg) repeat-x  fixed;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    box-sizing: border-box;
+}
+#bg {
+    position: relative;
+}
+#header {
+    height: 52px;
+    width: 100%;
+    border-bottom: 1px solid #494039;
+    position: relative;
+    z-index: 2;
+}
+#header .wrap {
+    position: relative;
+    z-index: 10;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 48px;
+}
+#header .wrap #logo {
+    display: inline-block;
+    width: 120px;
+    height: 25px;
+    margin: 13px 32px;
+    background: url(../images/logoImage.img.png);
+    background-size: cover;
+}
+#header .wrap .list {
+    margin-left: 65px;
+}
+#header .wrap .list li a {
+    padding-top: 4px;
+    padding-right: 48px;
+}
+#header .wrap .list li a span:hover {
+    color: #585858;
+    transition: all 0.2s ease-in 0s;
+}
+#header .wrap .list li a span {
+    color: #fff;
+}
+#header .wrap .user {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+#header .wrap .user a {
+    padding-right: 28px;
+}
+
+#header #mask {
+    position: absolute;
+    z-index: 9;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+}
+/*导航栏样式设计完成*/
+#post {
+    width: 100%;
+    height: 640px;
+    position: relative;
+    z-index: 1;
+    margin-top: -53px;
+    background: url(../images/bf-xlarge.png) no-repeat left -216px;
+    background-size: cover;
+}
+#post .title {
+    height: 244px;
+    width: 700px;
+    position: absolute;
+    margin-left: -350px;
+    margin-top: -122px;
+    left: 50%;
+    top: 50%;
+    background: url(../images/bf-logo.png) no-repeat ;
+    background-size: auto 244px;
+}
+#post .platform {
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+}
+#post .platform li{
+    margin-right: 15px;
+}
+#post .platform .tips span{
+    color: #fff;
+    line-height: 24px;
+}
+#post .platform .pc {
+    width: 24px;
+    height: 24px;
+    background: url(../images/win-Logo.png) no-repeat;
+    background-size: 24px 24px;
+}
+#post .platform .xb {
+    width: 118px;
+    height: 24px;
+    background: url(../images/xbox-one-logo.png) no-repeat;
+    background-size: 118px 24px;
+}
+#post .platform .ps {
+    padding-top: 4px;
+    width: 64px;
+    height: 16px;
+    background: url(../images/ps4-Logo.png) no-repeat;
+    background-origin: content-box;
+    background-size: 64px 16px;
+}
+/*Post Ended*/
+#main .header {
+    width: 910px;
+    margin: 0 auto 20px;
+    position: relative;
+}
+#main .header .main-title {
+    margin: 84px auto;
+    text-align: center;
+}
+#main .header .main-title h1 {
+    font-size: 48px;
+    line-height: 62px;
+}
+#main .header .article h4 {
+    line-height: 42px;
+}
+#main .header .article h4 a {
+    color: #f17f1a;
+}
+#main .middle{
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #585858;
+    margin-bottom: 65px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#main .middle .list {
+    width: 1103px;
+    margin: 0 auto;
+}
+#main .middle .list li {
+    margin-right: 45px;
+}
+#main .middle .list a {
+    line-height: 50px;
+    font-size: 19px;
+}
+#main .middle .list a:hover {
+    transition: all 0.2s ease-in 0s;
+    color: #f17f1a;
+    border-bottom: 2px solid #f17f1a;
+}
+#main .middle .list .active {
+    color: #f17f1a;
+    border-bottom: 2px solid #f17f1a;
+}
+
+#main .bottom .item {
+    height: 304px;
+    width: 252px;
+    position: relative;
+    background-color: #161616;
+    margin-bottom: 32px;
+}
+#main .bottom .item>img {
+    width: 252px;
+    height: 142px;
+}
+#main .bottom .item .army {
+    margin: 48px auto 0;
+}
+#main .bottom .item .army td {
+    display: inline-block;
+}
+#main .bottom .item .army h5 {
+    font-size: 9px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 90px;
+    height: 14px;
+    border-right: 2px solid #585858;
+}
+#main .bottom .item .army h6 {
+    padding-left: 5px;
+    font-size: 9px;
+    display: inline-block;
+    line-height: 14px;
+    height: 14px;
+}
+#main .bottom .item .army h4 {
+    line-height: 50px;
+}
+#main .bottom .item .army td {
+    text-align: left;
+}
+#main .bottom .item .army a {
+    display: inline-block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+#main .bottom .item .army a img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /*完全居中*/
+}
+#main .bottom .item .army a:hover {
+    transition: all 0.2s ease-in 0s;
+    transform: scale(1.2,1.2);
+}
+
+/*#main .bottom .item .team {*/
+    /*display: inline-block;*/
+/*}*/
+/*#main .bottom .item .army {*/
+    /*margin: 48px auto 0;*/
+    /*text-align: center;*/
+/*}*/
+/*#main .bottom .item .team+span {*/
+    /*display: inline-block;*/
+    /*border-left: 2px solid #585858;*/
+    /*padding-left: 5px;*/
+    /*color: #585858;*/
+/*}*/
+/*#main .bottom .item h4 {*/
+    /*text-align: center;*/
+    /*line-height: 50px;*/
+/*}*/
+
+
+#footer {
+    /*height: 383px;*/
+    width: 100%;
+    background-color: #1a1a1a;
+    position: relative;
+    color: #fff;
+}
+#footer .footer-top,#footer .footer-bottom{
+    padding-top: 40px;
+}
+#footer .wrap>.container {
+    border-bottom: 1px solid #303030;
+}
+#footer .right-container,#footer .left-container {
+    margin-bottom: 15px;
+}
+#footer .right-container div{
+    text-align: right;
+}
+#footer .right-container .list li{
+    margin-right: 40px;
+}
+#footer .right-container .list li:last-child{
+    margin: 0;
+}
+#footer .right-container .list a {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+#footer .right-container .list a img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /*完全居中*/
+}
+#footer .right-container .list a img:hover {
+    transition: all 0.2s ease-in 0s;
+    transform: scale(1.5,1.5);
+    /*width: 32px;*/
+    /*height: 32px;*/
+}
+#footer .left-container div {
+    text-align: left;
+}
+#footer .left-container .list li {
+    margin-right: 48px;
+}
+#footer .left-container .list li a {
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    border-bottom: 2px solid #1a1a1a;
+}
+#footer .footer-top .left-container .list li a:hover {
+    transition: all 0.2s ease-in 0s;
+    color: #f17f1a;
+    border-bottom: 2px solid #f17f1a;
+}
+#footer .main-title {
+    font-size: 18px;
+    line-height: 49px;
+}
+#footer .vice-title {
+    font-size: 15px;
+    line-height: 32px;
+}
+
+#footer .footer-bottom .list li:first-child {
+    margin-top: -10px;
+}
+#footer .footer-bottom .list li:nth-child(even) {
+    margin-top: 10px;
+}
+#footer .footer-bottom .list li:last-child {
+    margin-top: -15px;
+}
